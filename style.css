@@ -1,0 +1,112 @@
+/* ======================= GENERAL CSS ========================== */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
+}
+
+/* ======================= VARIABLES ============================ */
+:root{
+    --bg-color: #8FE3CF;
+    --main-color: #002B5B;
+    --input-container-color: #00489b;
+    --color-white: #ffffff;
+    --color-pure: #a7a7a7;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+.wrapper{
+    background: var(--main-color);
+    color: var(--color-white);
+    width: 24rem;
+    height: 34rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 4rem auto;
+}
+
+#topContainer{
+    margin-top: 4rem;
+}
+
+.container{
+    margin-top: 1.2rem;
+}
+
+.container .title{
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.container .inputContainer{
+    background: var(--input-container-color);
+    border-radius: 1.2rem;
+    padding: 0.6rem 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.inputContainer input{
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0 0.4rem;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+
+.inputContainer input::placeholder{
+    color: var(--color-pure);
+}
+
+
+.splitContainer .people{
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+.controls{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttonContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+.splitButton{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.splitAmount{
+    font-size: 1.2rem;
+}
+
+.totalContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.totalContainer .total{
+    font-size: 1.8rem;
+}
